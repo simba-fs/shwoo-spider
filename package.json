@@ -1,0 +1,32 @@
+{
+  "name": "shwoo-spider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simba-fs/shwoo-spider.git"
+  },
+  "keywords": [
+    "web-spider"
+  ],
+  "author": "simba-fs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simba-fs/shwoo-spider/issues"
+  },
+  "homepage": "https://github.com/simba-fs/shwoo-spider#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
