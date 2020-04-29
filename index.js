@@ -1,8 +1,10 @@
 const fs = require('fs');
-let id = [];
-if(fs.existsSync('./id.json')) id = require('./id.json');
 const cron = require('node-cron');
 const getInfo = require('./getInfo.js');
+const inquirer = require('inquirer');
+
+let id = [];
+if(fs.existsSync('./id.json')) id = require('./id.json');
 
 let spider = cron.schedule('0 * * * * *', () => {
 	let info = [];
@@ -15,3 +17,4 @@ let spider = cron.schedule('0 * * * * *', () => {
 		for(let i of data) console.log(i);
 	});
 });
+
