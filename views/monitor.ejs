@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 	<html lang="en">
 	<head>
+		<%- include('common/head.ejs'); %>
 		<meta charset="UTF-8">
 		<title>Shwoo Spider - Monitor</title>
 	</head>
 	<body>
-		<table>
-			<thead>
-				<tr>
-					<td>id</td>
-					<td>price</td>
-					<td>item</td>
-					<td>endDate</td>
-				</tr>
-			</thead>
-			<tbody>
-				<% for(let i of data){ %>
+		<div id="main">
+			<table>
+				<thead>
 					<tr>
-						<td><%= i.id %></td>
-						<td><%= i.price %></td>
-						<td><%= i.item %></td>
-						<td><%= i.endDate %></td>
-					</td>
-				<% } %>
-			</tbody>
-		</table>
+						<td>id</td>
+						<td>price</td>
+						<td>item</td>
+						<td>endDate</td>
+					</tr>
+				</thead>
+				<tbody>
+					<% for(let i of data){ %>
+						<tr>
+							<td><%= i.id %></td>
+							<td><%= i.price %></td>
+							<td><%= i.item %></td>
+							<td><%= i.endDate %></td>
+						</td>
+					<% } %>
+				</tbody>
+			</table>
+		</div>
+		<script src="socket.io.js"></script>
+		<script src="monitor.js"></script>
 	</body>
 </html>
