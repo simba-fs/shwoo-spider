@@ -1,0 +1,13 @@
+td {
+	padding: 15px 10px;
+}
+
+thead tr {
+	background-color: #cccccc;
+}
+
+tr:nth-child(even) {
+	background-color: #eeeeee;
+}
+
+

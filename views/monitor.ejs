@@ -4,6 +4,8 @@
 		<%- include('common/head.ejs'); %>
 		<meta charset="UTF-8">
 		<title>Shwoo Spider - Monitor</title>
+		<script src="moment.js"></script>
+		<link rel="stylesheet" href="monitor.css">
 	</head>
 	<body>
 		<div id="main">
@@ -14,6 +16,7 @@
 						<td>price</td>
 						<td>item</td>
 						<td>endDate</td>
+						<td>restTime</td>
 					</tr>
 				</thead>
 				<tbody>
@@ -23,6 +26,7 @@
 							<td><%= i.price %></td>
 							<td><%= i.item %></td>
 							<td><%= i.endDate %></td>
+							<td><%= i.restTime %></td>
 						</td>
 					<% } %>
 				</tbody>
